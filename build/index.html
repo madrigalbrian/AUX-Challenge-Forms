@@ -1,77 +1,113 @@
 <!doctype html>
-
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>Form Challenge</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+    <title>Form Challenge</title>
+    <meta name="description" content="Form Challenge">
+    <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,700,600,400|Merriweather:400italic,400,700,700italic">
 </head>
 
-<body>
-  <script src="js/scripts.js"></script>
+<body="body">
 
-<!--Header-->
-<h1> Sign up for Whoo!</h1>
-<p>50 projects, 500 images, 10 videos, domain binding, and technical support</p>
+    <!--Header-->
+    <header class="header">
+        <h1> Sign up for Whoo!</h1>
+        <p>50 projects, 500 images, 10 videos, domain binding, and technical support</p>
+    </header>
 
+    <!--Step #1-->
+    <main class="main">
+        <form action="" method="post">
+            <fieldset class="fieldset">
+                <legend class="title">First, name your portfolio</legend>
+                  <label class="label" for="portfolio_name">Portfolio name
+                    <input class="input" type="text" id="portfolio_name" name="portfolio_name" required>
+                  </label>
+                  <label class="label" for="portfolio_adress">Portfolio address
+                    <input class="input" type="text" id="portfolio_address" name="portfolio_address" required>
+                  </label>
+            </fieldset>
+            <!--Step #2-->
+            <fieldset class="fieldset">
+                <legend class="title">Now, enter your account details</legend>
+                  <label class="label" for="name"> Name
+                   <input class="input" type="text" id="name" name="name" required>
+                  </label>
+                  <label class="label" for="email"> Email
+                   <input class="input" type="text" id="email" name="email" required>
+                  </label>
+                  <label class="label" for="password"> Password
+                  <input class="input" type="text" id="password" name="password" required>
+                  </label>
+            </fieldset>
 
-<!--Step #1-->
-
-<div class="numberCircle">1</div><h2>First, name your portfolio</h2>
-
-<form>
-  Portfolio name<br>
-  <input type="text" name="firstname"><br>
-  Portfolio address<br>
-  <input type="text" name="lastname">
-</form>
-
-<!--Step #2-->
-<div class="numberCircle">2</div><h2>Now, enter your account details</h2>
-
-<form>
-  Name<br>
-  <input type="text" name="firstname"><br>
-  Email<br>
-  <input type="text" name="lastname"><br>
-  Password<br>
-  <input type="text" name="lastname">
-</form>
-
-<!--Step #3-->
-<div class="numberCircle">3</div><h2>Finally, enteryour payment information</h2>
-
-<form>
-  Card Number<br>
-  <input type="text" name="firstname"><img src="l"><img src="l"><img src="l"><img src="l"><br>
-  Security Code<br>
-  <input type="text" name="lastname"><br>
-  Expiration date<br>
-  <section class="container">
-    <div class="dropdown">
-      <select name="one" class="dropdown-select">
-        <option value="">Month</option>
-        <option value="1">Option #1</option>
-      </select>
-    </div>
-    <div class="dropdown dropdown-dark">
-      <select name="two" class="dropdown-select">
-        <option value="">Year</option>
-        <option value="1">Option #1</option>
-      </select>
-    </div>
-  </section>
-  </div>
-</div>
-</form>
-
-
-<!--Create your Portfolio Button-->
-<button name="button">Create your portfolio</button>
-
+            <!--Step #3-->
+            <fieldset class="fieldset">
+                <legend class="title">Finally, enteryour payment information</legend>
+                <label class="label" for="card_name">Card Number
+                  <input class="input" type="text" id="card_name" name="card_name" required>
+                </label>
+                  <label class="label" for="security_code">Security Code
+                  <input class="input" type="text" id="security_code" name="security_code" required>
+                </label>
+                <label>Expiration date</label>
+              <section class="container">
+                    <div class="dropdown">
+                        <select name="one" class="dropdown-select">
+                            <option value="">Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+                    <div class="dropdown dropdown-dark">
+                        <select name="two" class="dropdown-select">
+                          <option value="">Year</option>
+                          <option value="01">2016</option>
+                          <option value="02">2017</option>
+                          <option value="03">2018</option>
+                          <option value="04">2019</option>
+                          <option value="05">2020</option>
+                          <option value="06">2021</option>
+                          <option value="07">2022</option>
+                          <option value="08">2023</option>
+                          <option value="09">2024</option>
+                          <option value="10">2025</option>
+                          <option value="11">2026</option>
+                          <option value="12">2027</option>
+                          <option value="13">2028</option>
+                          <option value="14">2029</option>
+                          <option value="15">2030</option>
+                          <option value="16">2031</option>
+                          <option value="17">2032</option>
+                          <option value="18">2033</option>
+                          <option value="19">2034</option>
+                          <option value="20">2035</option>
+                          <option value="21">2036</option>
+                        </select>
+                     </div>
+                  </div>
+             </fieldset>
+            </section>
+            <!--Create your Portfolio Button-->
+            <button type="submit" class="green-button" name="button">Create your portfolio</button>
+        </form>
+    </main>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
