@@ -1,1 +1,98 @@
+/*BASE STYLES*/
+body {
+  background-color: #9ed4ed;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, san-serif;
+  line-height: 1.5;
+/*add a break-point to make responsive*/
+  background-image: #7CB4D4);
+}
 
+label {
+font-weight: 500;
+font-size: 10px;
+color: #6f6f6f;
+}
+
+input {
+  display: flex;
+  border-radius: 5px;
+
+}
+
+/*FORM STYLES*/
+.form-challenge {
+background-color: #fafafa;
+max-width: 480px;
+margin: 20px auto;
+}
+
+/*HEADER INSIDE FORM*/
+header {
+  background-color: #226878;
+}
+
+.header-title{
+  color: white;
+}
+
+.header-paragraph{
+  color: #b1e3ff;
+}
+
+/*FIELDSET STYLES*/
+fieldset{
+  border-style: none;
+}
+
+legend .fieldset-header{
+
+}
+.fieldset-number{
+  display: inline-block;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+
+    -moz-border-radius: 10px; /* or 50% */
+    border-radius: 10px; /* or 50% */
+
+    background-color: #b1e3ff;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+}/*http://stackoverflow.com/questions/9358882/how-to-make-a-circle-around-content-using-css*/
+
+.fieldset-title{
+ color: #155b79;
+}
+
+.fieldset-contain{
+  background-color: #e2e2e2;
+  border-radius: 10px;
+}
+
+/*UTILITY STYLES*/
+.dropdown {
+  display: inline-block;
+}
+
+/*VALIDATION*/
+:input.show-warning {
+  color:#e5293a;
+}
+
+
+
+/*BUTTON*/
+button{
+  background-color: #86a22f; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    font-size: 16px;
+    border-radius: 10px;
+}
