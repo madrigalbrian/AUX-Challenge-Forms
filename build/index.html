@@ -3,62 +3,95 @@
 
 <head>
     <meta charset="utf-8">
-
-    <title>Form Challenge</title>
     <meta name="description" content="Form Challenge">
-    <meta name="author" content="SitePoint">
+    <title>Form Challenge</title>
 
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,700,600,400|Merriweather:400italic,400,700,700italic">
+
+    <!--JAVASCRIPT IMPORTS(HAVE TO GO IN THE BOTTOM TO RENDER LAST)-->
+
 </head>
-
-<body="body">
-
+<body>
+   <div class="form-challenge">
     <!--Header-->
     <header class="header">
-        <h1> Sign up for Whoo!</h1>
-        <p>50 projects, 500 images, 10 videos, domain binding, and technical support</p>
+        <h1 class="header-title"> Sign up for Whoo!</h1>
+        <p class="header-paragraph">50 projects, 500 images, 10 videos, domain binding, and technical support</p>
     </header>
 
-    <!--Step #1-->
-    <main class="main">
         <form action="" method="post">
+            <!--Step #1-->
             <fieldset class="fieldset">
-                <legend class="title">First, name your portfolio</legend>
-                  <label class="label" for="portfolio_name">Portfolio name
-                    <input class="input" type="text" id="portfolio_name" name="portfolio_name" required>
-                  </label>
+                <legend class="fieldset-header">
+                  <span class="fieldset-number">1</span>
+                  <span class="fieldset-title">First, name your portfolio</span>
+                </legend>
+                <div class="fieldset-contain">
+                  <div class="fieldset-group">
+                    <label for="portfolio_name">Portfolio name
+                      <input class="input" type="text" id="portfolio_name" name="portfolio_name" required>
+                    </label>
+                  </div>
+                <div class="fieldset-group">
                   <label class="label" for="portfolio_adress">Portfolio address
-                    <input class="input" type="text" id="portfolio_address" name="portfolio_address" required>
+                    <input class="input" type="text" id="portfolio_address" name="portfolio_address" required/>
+                    <div class="warning">This field is required.</div>
                   </label>
+                </div>
             </fieldset>
             <!--Step #2-->
             <fieldset class="fieldset">
-                <legend class="title">Now, enter your account details</legend>
-                  <label class="label" for="name"> Name
-                   <input class="input" type="text" id="name" name="name" required>
+                <legend class="fieldset-header">
+                  <span class="fieldset-number">2</span>
+                  <span class="fieldset-title">Now, enter your account details></span>
+                </legend>
+                <div class="fieldset-contain">
+                  <div class="fieldset-group">
+                   <label for="name"> Name
+                   <input type="text" id="name" name="name" required/>
+                   <div class="warning">This field is required.</div>
+                   </label>
+                 </div>
+                 <div class="fieldset-group">
+                  <label for="email"> Email
+                   <input type="text" id="email" name="email" required />
+                   <div class="warning">This field requires a valid email.</div>
                   </label>
-                  <label class="label" for="email"> Email
-                   <input class="input" type="text" id="email" name="email" required>
+                </div>
+                 <div class="fieldset-group">
+                  <label for="password"> Password
+                  <input type="text" id="password" name="password" required/>
+                  <div class="warning">This field requires a valid password</div>
                   </label>
-                  <label class="label" for="password"> Password
-                  <input class="input" type="text" id="password" name="password" required>
-                  </label>
+                </div>
             </fieldset>
 
             <!--Step #3-->
             <fieldset class="fieldset">
-                <legend class="title">Finally, enteryour payment information</legend>
+                <legend class="fieldset-header">
+                  <span class="fieldset-number">3</span>
+                  <span class="fieldset-title">
+                    Finally, enteryour payment information
+                  </span>
+                </legend>
+              <div class="fieldset-group">
                 <label class="label" for="card_name">Card Number
-                  <input class="input" type="text" id="card_name" name="card_name" required>
+                  <input class="input" type="text" id="card_name" name="card_name" required/>
+                  <div class="warning">This field requires a valid credit card number</div>
                 </label>
-                  <label class="label" for="security_code">Security Code
-                  <input class="input" type="text" id="security_code" name="security_code" required>
+              </div>
+              <div class="fieldset-group">
+                  <label for="security_code">Security Code
+                  <input class="input" type="text" id="security_code" name="security_code" required />
+                  <div class="warning">Please enter security code.</div>
                 </label>
-                <label>Expiration date</label>
+              </div>
+
+                <label for="expiration-date">Expiration date</label>
               <section class="container">
                     <div class="dropdown">
-                        <select name="one" class="dropdown-select">
+                        <select name="month" class="dropdown-select" id="expiration-month" required />
                             <option value="">Month</option>
                             <option value="1">January</option>
                             <option value="2">February</option>
@@ -73,9 +106,10 @@
                             <option value="11">November</option>
                             <option value="12">December</option>
                         </select>
+                        <div class="warning">Please choose a month.</div>
                     </div>
                     <div class="dropdown dropdown-dark">
-                        <select name="two" class="dropdown-select">
+                        <select name="year" class="dropdown-select" id="expiration-month" required>
                           <option value="">Year</option>
                           <option value="01">2016</option>
                           <option value="02">2017</option>
@@ -99,14 +133,15 @@
                           <option value="20">2035</option>
                           <option value="21">2036</option>
                         </select>
+                          <div class="warning">Please choose a year.</div>
                      </div>
                   </div>
              </fieldset>
             </section>
             <!--Create your Portfolio Button-->
-            <button type="submit" class="green-button" name="button">Create your portfolio</button>
+            <button class="green-button" type="submit">Create your portfolio</button>
         </form>
-    </main>
+      </div>
     <script src="js/scripts.js"></script>
 </body>
 
